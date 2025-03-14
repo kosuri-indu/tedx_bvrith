@@ -280,7 +280,34 @@
         setInterval(updateCountdown, 1000);
         updateCountdown();
     </script>
-
+    <!-- Poster Section -->
+    <section id="poster-section">
+        <div class="image-container">
+            <img src="img/poster/tedx_poster_hd.png" alt="TEDx poster">
+        </div>
+    </section>
+    
+    <style>
+        #poster-section {
+            text-align: center;
+            padding: 50px 0;
+            background: black;
+        }
+    
+        .image-container img {
+            max-width: 80%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0px -10px 20px rgba(255, 0, 0, 0.6), /* Increased red glow on top */
+                        0px 4px 10px rgba(255, 0, 0, 0.5); /* Existing glow on bottom */
+        }
+    
+        @media (max-width: 768px) {
+            .image-container img {
+                max-width: 100%;
+            }
+        }
+    </style>
 
     <!-- WHY TEDx Section -->
     <section id="why-tedx">
