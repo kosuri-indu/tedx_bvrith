@@ -176,28 +176,36 @@
         flex-wrap: wrap;
         justify-content: center;
         text-shadow: 2px 2px 10px rgba(255, 0, 0, 0.3);
-        color: white;
     }
 
     .countdown-item {
         display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: center;
         background: rgba(255, 0, 0, 0.2);
-        padding: 20px 30px;
+        padding: 20px;
         border-radius: 10px;
         box-shadow: 0px 4px 15px rgba(255, 0, 0, 0.5);
         transition: transform 0.3s ease-in-out;
+        width: 120px; /* Ensures uniform width */
+        height: 140px; /* Ensures uniform height */
     }
 
     .countdown-item:hover {
         transform: scale(1.05);
     }
 
+    .countdown-number {
+        font-size: 3.5rem;
+        font-weight: bold;
+        color: white;
+    }
+
     .label {
-        font-size: 1.2rem;
+        font-size: 1rem;
         color: red;
-        margin-top: 8px;
+        margin-top: 5px;
         text-transform: uppercase;
         font-weight: 500;
     }
@@ -208,12 +216,6 @@
         margin-top: 20px;
         margin-bottom: 2rem;
         text-shadow: 2px 2px 10px rgba(255, 0, 0, 0.5);
-        color: white;
-    }
-
-    .superscript {
-        font-size: 1.5rem;
-        vertical-align: super;
     }
 
     .venue {
@@ -232,6 +234,11 @@
             gap: 40px;
         }
 
+        .countdown-item {
+            width: 100px;
+            height: 120px;
+        }
+
         .event-date {
             font-size: 3.5rem;
         }
@@ -241,6 +248,11 @@
         .countdown-text {
             font-size: 2.5rem;
             gap: 25px;
+        }
+
+        .countdown-item {
+            width: 90px;
+            height: 110px;
         }
 
         .event-date {
@@ -254,18 +266,19 @@
 
     @media (max-width: 480px) {
         .countdown-text {
-            font-size: 3rem;
+            font-size: 2.5rem;
             flex-direction: column;
             align-items: center;
-            gap: 20px;
+            gap: 15px;
         }
 
         .countdown-item {
-            padding: 10px 20px;
+            width: 80px;
+            height: 100px;
         }
 
         .label {
-            font-size: 1rem;
+            font-size: 0.9rem;
         }
 
         .event-date {
@@ -277,6 +290,7 @@
         }
     }
 </style>
+
 
     <script>
         function updateCountdown() {
