@@ -15,8 +15,6 @@
     <link href="lib/animate/animate.min.css" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"
         crossorigin="anonymous"></script>
-
-
     <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
     <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
     <link href="lib/magnific-popup/magnific-popup.css" rel="stylesheet">
@@ -25,135 +23,86 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <link href="css/style.css" rel="stylesheet">
-</head>
-
-<body id="body" name="body">
-    <div id="navbar-container"></div>
-    <script>
-        function loadNavbar() {
-            fetch('navbar.html')
-                .then(response => response.text())
-                .then(data => {
-                    document.getElementById('navbar-container').innerHTML = data;
-                })
-                .catch(error => console.error('Error loading navbar:', error));
-        }
-        loadNavbar();
-    </script>
-    <!-- Video Section -->
-    <section id="hero" class="video-section">
-        <video autoplay loop muted playsinline class="background-video">
-            <source src="img/media/a5.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-
-        <!-- Text Content -->
-        <div class="video-overlay">
-            <h1 class="text-white">ECHOES OF THE UNSAID</h1>
-            <p>The biggest TEDx event. Consisting of speakers from all over India. Get your ticket now!
-            </p>
-        </div>
-    </section>
-
     <style>
-        /* Full-screen video */
-        .video-section {
-            position: relative;
+        /* Main Video Background Styles */
+        body {
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+
+        .background-video-container {
+            position: fixed;
+            top: 0;
+            left: 0;
             width: 100%;
             height: 100vh;
+            z-index: -2;
             overflow: hidden;
         }
 
         .background-video {
             position: absolute;
-            top: 50%;
-            left: 50%;
+            top: 0;
+            left: 0;
             width: 100%;
             height: 100%;
             object-fit: cover;
-            transform: translate(-50%, -50%);
         }
 
-        /* Overlay Text */
-        .video-overlay {
-            position: absolute;
-            bottom: 50%;
-            left: 50%;
-            transform: translateX(-50%);
+        /* Hero Section */
+        #hero {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
             text-align: center;
-            width: 100%;
-            max-width: 90vw;
-            /* Ensures it fits within screen */
-            padding: 0 20px;
-            /* Adds slight padding */
-            color: white;
-            font-family: Arial, sans-serif;
         }
 
-        .video-overlay h1 {
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            width: 100%;
+            padding: 0 20px;
+        }
+
+        .hero-title {
             font-size: 5rem;
             font-weight: bold;
+            color: white;
             letter-spacing: 4px;
-            width: 100%;
-            white-space: nowrap;
-            /* Prevents line breaks */
-            overflow: hidden;
-            text-overflow: ellipsis;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
         }
 
-        .video-overlay p {
+        .hero-subtitle {
             font-size: 2.5rem;
+            color: white;
             margin-top: 10px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Translucent Overlay */
+        .content-overlay {
+            position: absolute;
+            top: 100vh; /* Start after hero section */
+            left: 0;
             width: 100%;
-            white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis;
+            background-color: rgba(0, 0, 0, 0.65); /* Translucent black */
+            z-index: -1;
         }
 
-        /* Responsive */
-        @media (max-width: 768px) {
-            .video-overlay h1 {
-                font-size: 2.5rem;
-                white-space: normal;
-                /* Allows wrapping for smaller screens */
-            }
-
-            .video-overlay p {
-                font-size: 1.2rem;
-                white-space: normal;
-            }
+        /* Main Content Container */
+        .main-content {
+            position: relative;
+            z-index: 1;
+            color: white;
         }
-    </style>
-    <!-- Countdown Section -->
-    <section id="countdown-section">
-        <div class="countdown-container">
-            <div class="countdown-text">
-                <div class="countdown-item">
-                    <span id="days">00</span>
-                    <span class="label">DAYS</span>
-                </div>
-                <div class="countdown-item">
-                    <span id="hours">00</span>
-                    <span class="label">HOURS</span>
-                </div>
-                <div class="countdown-item">
-                    <span id="minutes">00</span>
-                    <span class="label">MINUTES</span>
-                </div>
-                <div class="countdown-item">
-                    <span id="seconds">00</span>
-                    <span class="label">SECONDS</span>
-                </div>
-            </div>
-            <h1 class="event-date text-white">APRIL 11<span class="superscript">TH</span> 2025</h1>
-            <p class="venue">BVRIT HYDERABAD COLLEGE OF ENGINEERING FOR WOMEN</p>
-        </div>
-    </section>
 
-    <style>
         /* Countdown Section */
         #countdown-section {
-            background: black;
+            background-color: transparent;
             color: white;
             text-align: center;
             padding: 80px 20px;
@@ -209,91 +158,13 @@
             text-align: center;
         }
 
-        /* Responsive Styles */
-        @media (max-width: 1024px) {
-            .countdown-text {
-                font-size: 3.5rem;
-                gap: 30px;
-            }
-
-            .event-date {
-                font-size: 2.2rem;
-            }
-        }
-
-        @media (max-width: 768px) {
-            .countdown-text {
-                font-size: 2.5rem;
-                gap: 20px;
-            }
-
-            .event-date {
-                font-size: 3rem;
-            }
-
-            .venue {
-                font-size: 2rem;
-            }
-        }
-
-        @media (max-width: 480px) {
-            .countdown-text {
-                font-size: 4rem;
-                flex-direction: column;
-                align-items: center;
-                gap: 15px;
-            }
-
-            .label {
-                font-size: 0.9rem;
-            }
-
-            .event-date {
-                font-size: 3rem;
-            }
-
-            .venue {
-                font-size: 2rem;
-            }
-        }
-    </style>
-
-    <script>
-        function updateCountdown() {
-            const eventDate = new Date("April 11, 2025 09:00:00").getTime();
-            const now = new Date().getTime();
-            const diff = eventDate - now;
-
-            if (diff > 0) {
-                const days = Math.floor(diff / (1000 * 60 * 60 * 24));
-                const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-                const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
-                const seconds = Math.floor((diff % (1000 * 60)) / 1000);
-
-                document.getElementById("days").textContent = days;
-                document.getElementById("hours").textContent = hours;
-                document.getElementById("minutes").textContent = minutes;
-                document.getElementById("seconds").textContent = seconds;
-            }
-        }
-
-        setInterval(updateCountdown, 1000);
-        updateCountdown();
-    </script>
-    <!-- Poster Section -->
-    <section id="poster-section">
-        <div class="image-container">
-            <img src="img/poster/tedx_poster_hd.png" alt="TEDx poster">
-        </div>
-    </section>
-    
-    <style>
+        /* Poster Section */
         #poster-section {
             text-align: center;
             padding: 50px 0;
             background: black;
         }
-    
+
         .image-container img {
             max-width: 80%;
             height: auto;
@@ -301,40 +172,16 @@
             box-shadow: 0px -10px 20px rgba(255, 0, 0, 0.6), /* Increased red glow on top */
                         0px 4px 10px rgba(255, 0, 0, 0.5); /* Existing glow on bottom */
         }
-    
+
         @media (max-width: 768px) {
             .image-container img {
                 max-width: 100%;
             }
         }
-    </style>
 
-    <!-- WHY TEDx Section -->
-    <section id="why-tedx">
-        <div class="container">
-            <h2 class="section-title"><span class="highlight">WHY TEDx?</span></h2>
-            <p class="text">
-                TED, which stands for <span class="highlight">Technology, Entertainment, and Design</span>, is a
-                platform for infinite ideas. As an international nonprofit organization, TED thrives on creativity,
-                embracing diverse perspectives, and giving a voice to every idea—big or small. TEDx provides a stage for
-                speakers of all styles, backgrounds, and languages, encouraging them to share
-                insights ranging from groundbreaking business innovations to deeply personal life experiences.
-            </p>
-
-            <h2 class="section-title"><span class="highlight">WE THE BVRITH...</span></h2>
-            <p class="text">
-                In a world woven with countless perspectives, TEDxBVRITH stands as a platform where imagination meets
-                expression. Our speakers break open the caps of their minds, unleashing thoughts that challenge norms,
-                spark inspiration, and encourage fearless exploration.
-                At TEDxBVRITH, we believe in fostering that courage—the courage to challenge the unknown, to inspire
-                others, and to create an impact that lasts beyond the stage.
-            </p>
-        </div>
-    </section>
-
-    <style>
+        /* Why TEDx Section */
         #why-tedx {
-            background: black;
+            background-color: transparent;
             color: white;
             padding: 100px 20px;
             position: relative;
@@ -381,68 +228,11 @@
             font-size: 2rem;
             line-height: 1.8;
             text-align: justify;
-            opacity: 0.6;
+            opacity: 0.9;
             margin-bottom: 20px;
         }
-    </style>
 
-    <!-- Partners Section -->
-    <section id="partners" style="background-color: black; padding: 50px 0; overflow: hidden; white-space: nowrap;">
-        <div class="container">
-            <h2 class="text-center text-red font-weight-bold">PARTNERS</h2>
-            <br>
-            <br>
-            <br>
-            <div class="marquee-wrapper">
-                <div class="marquee">
-                    <div class="partner-announcement">
-                        <h2 style="color: white;opacity: 0.6;">To be announced soon</h2>
-                    </div>
-                    <!-- Duplicate for continuous scrolling effect -->
-                    <div class="partner-announcement">
-                        <h2 style="color: white;opacity: 0.6;">To be announced soon</h2>
-                    </div>
-                    <div class="partner-announcement">
-                        <h2 style="color: white;opacity: 0.6;">To be announced soon</h2>
-                    </div>
-                    <div class="partner-announcement">
-                        <h2 style="color: white;opacity: 0.6;">To be announced soon</h2>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <br>
-    <br>
-    <br>
-    <br>
-    <section id="media" style="background-color: black; padding: 50px 0; overflow: hidden; white-space: nowrap;">
-        <div class="container">
-            <h2 class="text-center text-red font-weight-bold">MEDIA</h2>
-            <br>
-            <br>
-            <br>
-            <div class="marquee-wrapper">
-                <div class="marquee">
-                    <img src="img/media/smb1.jpg" alt="Media Image 1">
-                    <img src="img/media/smb2.jpg" alt="Media Image 2">
-                    <img src="img/media/smbhall3.jpg" alt="Media Image 3">
-                    <img src="img/media/SMB Seminar hall 1.jpg" alt="Media Image 4">
-                    <img src="img/media/SMB Seminar hall 1.jpg" alt="Media Image 5">
-                    <img src="img/media/SMB Seminar hall 1.jpg" alt="Media Image 6">
-                    <!-- Duplicate images for continuous scrolling effect -->
-                    <img src="img/media/smb1.jpg" alt="Media Image 1">
-                    <img src="img/media/smb2.jpg" alt="Media Image 2">
-                    <img src="img/media/smbhall3.jpg" alt="Media Image 3">
-                    <img src="img/media/SMB Seminar hall 1.jpg" alt="Media Image 4">
-                    <img src="img/media/SMB Seminar hall 1.jpg" alt="Media Image 5">
-                    <img src="img/media/SMB Seminar hall 1.jpg" alt="Media Image 6">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <style>
+        /* Partners & Media Section */
         .marquee-wrapper {
             display: flex;
             overflow: hidden;
@@ -459,60 +249,299 @@
 
         .marquee img {
             width: auto;
-            /* Increased width */
             height: 400px;
             border-radius: 10px;
+        }
+
+        .partner-announcement h2 {
+            color: white;
+            opacity: 0.6;
+            font-size: 2rem;
+            margin: 0 50px;
         }
 
         @keyframes marquee {
             from {
                 transform: translateX(0%);
             }
-
             to {
                 transform: translateX(-50%);
             }
         }
+
+        .text-red {
+            color: red;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            .hero-title {
+                font-size: 2.5rem;
+            }
+
+            .hero-subtitle {
+                font-size: 1.2rem;
+            }
+
+            .countdown-text {
+                font-size: 2.5rem;
+                gap: 20px;
+            }
+
+            .event-date {
+                font-size: 2.2rem;
+            }
+
+            .venue {
+                font-size: 1.5rem;
+            }
+
+            .text {
+                font-size: 1.5rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .countdown-text {
+                font-size: 2rem;
+                flex-direction: column;
+                align-items: center;
+                gap: 15px;
+            }
+
+            .marquee img {
+                height: 300px;
+            }
+        }
     </style>
+</head>
 
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
+<body id="body" name="body">
+    <!-- Fixed Background Video Container -->
+    <div class="background-video-container">
+        <video autoplay loop muted playsinline class="background-video">
+            <source src="img/media/a5.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
 
-    <div id="footer-container"></div>
+    <div id="navbar-container"></div>
     <script>
+        function loadNavbar() {
+            fetch('navbar.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('navbar-container').innerHTML = data;
+                })
+                .catch(error => console.error('Error loading navbar:', error));
+        }
+        loadNavbar();
+    </script>
+
+    <!-- Hero Section with Title -->
+    <section id="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">ECHOES OF THE UNSAID</h1>
+            <p class="hero-subtitle">The biggest TEDx event. Consisting of speakers from all over India. Get your ticket now!</p>
+        </div>
+    </section>
+
+    <!-- Translucent Overlay -->
+    <div class="content-overlay"></div>
+
+    <!-- Main Content Section -->
+    <div class="main-content">
+        <!-- Countdown Section -->
+        <section id="countdown-section">
+            <div class="countdown-container">
+                <div class="countdown-text">
+                    <div class="countdown-item">
+                        <span id="days">00</span>
+                        <span class="label">DAYS</span>
+                    </div>
+                    <div class="countdown-item">
+                        <span id="hours">00</span>
+                        <span class="label">HOURS</span>
+                    </div>
+                    <div class="countdown-item">
+                        <span id="minutes">00</span>
+                        <span class="label">MINUTES</span>
+                    </div>
+                    <div class="countdown-item">
+                        <span id="seconds">00</span>
+                        <span class="label">SECONDS</span>
+                    </div>
+                </div>
+                <h1 class="event-date text-white">APRIL 11<span class="superscript">TH</span> 2025</h1>
+                <p class="venue">BVRIT HYDERABAD COLLEGE OF ENGINEERING FOR WOMEN</p>
+            </div>
+        </section>
+
+        <!-- Poster Section -->
+        <section id="poster-section">
+            <div class="image-container">
+                <img src="img/poster/tedx_poster_hd.png" alt="TEDx poster">
+            </div>
+        </section>
+
+        <!-- WHY TEDx Section -->
+        <section id="why-tedx">
+            <div class="container">
+                <h2 class="section-title"><span class="highlight">WHY TEDx?</span></h2>
+                <p class="text">
+                    TED, which stands for <span class="highlight">Technology, Entertainment, and Design</span>, is a
+                    platform for infinite ideas. As an international nonprofit organization, TED thrives on creativity,
+                    embracing diverse perspectives, and giving a voice to every idea—big or small. TEDx provides a stage for
+                    speakers of all styles, backgrounds, and languages, encouraging them to share
+                    insights ranging from groundbreaking business innovations to deeply personal life experiences.
+                </p>
+
+                <h2 class="section-title"><span class="highlight">WE THE BVRITH...</span></h2>
+                <p class="text">
+                    In a world woven with countless perspectives, TEDxBVRITH stands as a platform where imagination meets
+                    expression. Our speakers break open the caps of their minds, unleashing thoughts that challenge norms,
+                    spark inspiration, and encourage fearless exploration.
+                    At TEDxBVRITH, we believe in fostering that courage—the courage to challenge the unknown, to inspire
+                    others, and to create an impact that lasts beyond the stage.
+                </p>
+            </div>
+        </section>
+
+        <!-- Partners Section -->
+        <section id="partners" style="padding: 50px 0; overflow: hidden; white-space: nowrap;">
+            <div class="container">
+                <h2 class="text-center text-red font-weight-bold">PARTNERS</h2>
+                <br>
+                <br>
+                <br>
+                <div class="marquee-wrapper">
+                    <div class="marquee">
+                        <div class="partner-announcement">
+                            <h2>To be announced soon</h2>
+                        </div>
+                        <!-- Duplicate for continuous scrolling effect -->
+                        <div class="partner-announcement">
+                            <h2>To be announced soon</h2>
+                        </div>
+                        <div class="partner-announcement">
+                            <h2>To be announced soon</h2>
+                        </div>
+                        <div class="partner-announcement">
+                            <h2>To be announced soon</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <br>
+        <br>
+        <br>
+        <br>
+        <section id="media" style="padding: 50px 0; overflow: hidden; white-space: nowrap;">
+            <div class="container">
+                <h2 class="text-center text-red font-weight-bold">MEDIA</h2>
+                <br>
+                <br>
+                <br>
+                <div class="marquee-wrapper">
+                    <div class="marquee">
+                        <img src="img/media/smb1.jpg" alt="Media Image 1">
+                        <img src="img/media/smb2.jpg" alt="Media Image 2">
+                        <img src="img/media/smbhall3.jpg" alt="Media Image 3">
+                        <img src="img/media/SMB Seminar hall 1.jpg" alt="Media Image 4">
+                        <img src="img/media/SMB Seminar hall 1.jpg" alt="Media Image 5">
+                        <img src="img/media/SMB Seminar hall 1.jpg" alt="Media Image 6">
+                        <!-- Duplicate images for continuous scrolling effect -->
+                        <img src="img/media/smb1.jpg" alt="Media Image 1">
+                        <img src="img/media/smb2.jpg" alt="Media Image 2">
+                        <img src="img/media/smbhall3.jpg" alt="Media Image 3">
+                        <img src="img/media/SMB Seminar hall 1.jpg" alt="Media Image 4">
+                        <img src="img/media/SMB Seminar hall 1.jpg" alt="Media Image 5">
+                        <img src="img/media/SMB Seminar hall 1.jpg" alt="Media Image 6">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <div id="footer-container"></div>
+    </div>
+
+    <script>
+        // Load footer
         fetch('footer.html')
             .then(response => response.text())
             .then(data => document.getElementById('footer-container').innerHTML = data);
-    </script>
 
-    <script>
-        $(document).ready(function () {
-            $('#mediaCarousel').carousel({
-                interval: 2000, /* Change speed */
-                wrap: true
-            });
+        // Countdown function
+        function updateCountdown() {
+            const eventDate = new Date("April 11, 2025 09:00:00").getTime();
+            const now = new Date().getTime();
+            const diff = eventDate - now;
+
+            if (diff > 0) {
+                const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+                const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+                const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+
+                document.getElementById("days").textContent = days;
+                document.getElementById("hours").textContent = hours;
+                document.getElementById("minutes").textContent = minutes;
+                document.getElementById("seconds").textContent = seconds;
+            }
+        }
+
+        setInterval(updateCountdown, 1000);
+        updateCountdown();
+
+        // Calculate overlay height
+        function setOverlayHeight() {
+            const mainContent = document.querySelector('.main-content');
+            const overlay = document.querySelector('.content-overlay');
+            overlay.style.height = mainContent.offsetHeight + 'px';
+        }
+
+        window.addEventListener('load', setOverlayHeight);
+        window.addEventListener('resize', setOverlayHeight);
+
+        // Scroll effect
+        window.addEventListener('scroll', function() {
+            const hero = document.getElementById('hero');
+            const heroContent = document.querySelector('.hero-content');
+            
+            // Calculate opacity based on scroll position
+            const scrollPosition = window.scrollY;
+            const heroHeight = hero.offsetHeight;
+            const opacity = 1 - (scrollPosition / (heroHeight / 2));
+            
+            // Apply opacity to hero content
+            if (opacity >= 0) {
+                heroContent.style.opacity = opacity;
+            } else {
+                heroContent.style.opacity = 0;
+            }
         });
     </script>
-</body>
-</main>
 
-
-<a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
-<script src="js/main.js"></script>
-<script src="lib/jquery/jquery.min.js"></script>
-<script src="lib/jquery/jquery-migrate.min.js"></script>
-<script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
-<script src="lib/easing/easing.min.js"></script>
-<script src="lib/superfish/hoverIntent.js"></script>
-<script src="lib/superfish/superfish.min.js"></script>
-<script src="lib/wow/wow.min.js"></script>
-<script src="lib/owlcarousel/owl.carousel.min.js"></script>
-<script src="lib/magnific-popup/magnific-popup.min.js"></script>
-<script src="lib/sticky/sticky.js"></script>
-<script src="contactform/contactform.js"></script>
+    <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+    <script src="js/main.js"></script>
+    <script src="lib/jquery/jquery.min.js"></script>
+    <script src="lib/jquery/jquery-migrate.min.js"></script>
+    <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/superfish/hoverIntent.js"></script>
+    <script src="lib/superfish/superfish.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/magnific-popup/magnific-popup.min.js"></script>
+    <script src="lib/sticky/sticky.js"></script>
+    <script src="contactform/contactform.js"></script>
 </body>
 
 </html>
