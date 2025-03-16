@@ -151,112 +151,132 @@
     </section>
 
     <style>
-        /* Countdown Section */
-        #countdown-section {
-            background: black;
-            color: white;
-            text-align: center;
-            padding: 80px 20px;
-        }
+    /* Countdown Section */
+    #countdown-section {
+        background: black;
+        color: white;
+        text-align: center;
+        padding: 60px 20px;
+        font-family: 'Poppins', sans-serif;
+    }
 
-        .countdown-container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            width: 100%;
-        }
+    .countdown-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
 
+    .countdown-text {
+        display: flex;
+        gap: 50px;
+        font-size: 3.5rem;
+        font-weight: 700;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-shadow: 2px 2px 10px rgba(255, 0, 0, 0.3);
+        color: white;
+    }
+
+    .countdown-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: rgba(255, 0, 0, 0.2);
+        padding: 20px 30px;
+        border-radius: 10px;
+        box-shadow: 0px 4px 15px rgba(255, 0, 0, 0.5);
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .countdown-item:hover {
+        transform: scale(1.05);
+    }
+
+    .label {
+        font-size: 1.2rem;
+        color: red;
+        margin-top: 8px;
+        text-transform: uppercase;
+        font-weight: 500;
+    }
+
+    .event-date {
+        font-size: 4rem;
+        font-weight: 800;
+        margin-top: 20px;
+        margin-bottom: 2rem;
+        text-shadow: 2px 2px 10px rgba(255, 0, 0, 0.5);
+        color: white;
+    }
+
+    .superscript {
+        font-size: 1.5rem;
+        vertical-align: super;
+    }
+
+    .venue {
+        font-size: 2rem;
+        font-weight: bold;
+        color: red;
+        margin-top: 15px;
+        text-align: center;
+        text-shadow: 2px 2px 10px rgba(255, 0, 0, 0.3);
+    }
+
+    /* Responsive Styles */
+    @media (max-width: 1024px) {
         .countdown-text {
-            display: flex;
+            font-size: 3rem;
             gap: 40px;
-            font-size: 4rem;
-            font-weight: bold;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-
-        .countdown-item {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            margin-bottom: 2rem;
-        }
-
-        .label {
-            font-size: 1rem;
-            color: gray;
-            margin-top: 5px;
         }
 
         .event-date {
             font-size: 3.5rem;
-            font-weight: bold;
-            margin-top: 20px;
-            margin-bottom: 3rem;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .countdown-text {
+            font-size: 2.5rem;
+            gap: 25px;
         }
 
-        .superscript {
-            font-size: 1.5rem;
-            vertical-align: super;
+        .event-date {
+            font-size: 3rem;
         }
 
         .venue {
-            font-size: 2rem;
-            font-weight: bold;
-            color: red;
-            margin-top: 10px;
-            text-align: center;
+            font-size: 1.8rem;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .countdown-text {
+            font-size: 3rem;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
         }
 
-        /* Responsive Styles */
-        @media (max-width: 1024px) {
-            .countdown-text {
-                font-size: 3.5rem;
-                gap: 30px;
-            }
-
-            .event-date {
-                font-size: 2.2rem;
-            }
+        .countdown-item {
+            padding: 10px 20px;
         }
 
-        @media (max-width: 768px) {
-            .countdown-text {
-                font-size: 2.5rem;
-                gap: 20px;
-            }
-
-            .event-date {
-                font-size: 3rem;
-            }
-
-            .venue {
-                font-size: 2rem;
-            }
+        .label {
+            font-size: 1rem;
         }
 
-        @media (max-width: 480px) {
-            .countdown-text {
-                font-size: 4rem;
-                flex-direction: column;
-                align-items: center;
-                gap: 15px;
-            }
-
-            .label {
-                font-size: 0.9rem;
-            }
-
-            .event-date {
-                font-size: 3rem;
-            }
-
-            .venue {
-                font-size: 2rem;
-            }
+        .event-date {
+            font-size: 2.5rem;
         }
-    </style>
+
+        .venue {
+            font-size: 1.6rem;
+        }
+    }
+</style>
 
     <script>
         function updateCountdown() {
