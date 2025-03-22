@@ -1,11 +1,18 @@
 const profiles = {
     2025: [
-        {
+        /*{
             name: "Exciting Speakers Coming Soon!",
             role: "Stay Tuned for Big Announcements",
             description: "Our 2025 speaker lineup is currently under wraps, but we promise it's going to be incredible! Expect industry leaders, visionaries, and changemakers who will inspire and challenge the way we think about the future. Keep an eye on this space as we unveil our speakers one by one!",
             image: "img/media/cs.jpg"
-        }
+        },*/
+        {
+            name: "Dr. Shriram Darbha",
+            role: "Founder and Chief Curator, IKSA - Indian Knowledge Studies Academy, Bengaluru",
+            description: "Dr. Shriram Darbha is a Masters in English Literature and also a Masters in Human Resources Management from the prestigious Tata Institute of Social Sciences-Mumbai. He is a Doctoral Fellow of Academy of HRD, Ahmedabad and a Ph.D. from Acharya Nagarjuna University, AP. He has about 33 years of strategic as well as operational HR functional leadership experience spread across reputed Service (Hospitality), IT (BFSI & Product), ITES, Telecom, Pharmaceutical Mfg., Consulting, Financial Services and Educational Institutions. Before transitioning into academics, he was the Head-HR of BSE (Bombay Stock Exchange) and a Sr. Vice President-HR with a Financial Services company in Mumbai. Later he was a Professor and Director at the Svyasa Yoga University and had been a Professor and Dean of School of Management at CMR University-Bengaluru. Currently he is the Founder and Chief Curator of “IKSA”- the Indian Knowledge Studies Academy, Bengaluru. He is a recipient of several National and International HR leadership awards from professional bodies like the World HRD Congress as a Most Talented, Influential, and Innovative HR leader in India / Asia. He was awarded the ‘IKON-Bhishma-Lifetime Achievement Award’ for his versatile talents. Recipient of the most prestigious Govt. of AP- ‘Ugaadi Saahitya Puraskaaram’ for his unique Literary Contribution to the Telugu Literature in the form of a Carnatic classical music album “Sreeramo Lalitaambika”- Srichakreswari Navaavarana Navarasa Krutulu- First of its kind in lucid Telugu language. He is an author of “Vibudharaama Shatakam” an anthology of 108 Telugu poems on moral values. Spiritually he is an adept ‘Srividya’ (Poorna Deeksha) practitioner. His passionate Doctoral research studies include; ‘Self-Actualization, Karma Yoga / Workplace Spirituality, Holistic Work Life Balance Faith and Business Sentiments’. He is an accomplished artist and an author apart from being a popular speaker at various HR fora / academia across the country on ‘Ancient Wisdom to Modern Management’ perspectives. He launched a unique noble venture; www.gotogita.in, World’s first interactive practical application of the Bhagawadgita - One stop solution for all the mundane concerns and troubles, to provide psycho spiritual counselling service through Ancient Wisdom to Modern Management perspectives for Holistic Work-Life Balance and Integrated Wellbeing. He is a regular speaker on Vartic TV providing practical perspectives on Bhagawadgita for the last 3 years. His Professional Passion is to work closely with the people, to leverage and align their talents and full potential to achieve the organizational objectives through strategic HR, Learning & OD interventions as a Change Master and a Soft/Life skills Trainer / Coach. Thus, he is a Work-Life Guru. His Personal Passion is about practicing Life Management by certain ‘Dharmic and Karmic’ Values and Principles based on Ancient Indian Philosophy and the Bhagawadgita to touch and make positive difference to the Life of Self and Others. Thus, he is a Practical Vedantin.",
+            image: "img/speaker_pics/shriram_darbha.png" 
+        } 
+
     ],
     2024: [
         {
