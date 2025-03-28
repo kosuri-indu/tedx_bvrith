@@ -17,6 +17,36 @@ const profiles = {
             "role": "Co-Founder & CEO, Avasarshala",
             "description": "Ashwathy Venugopal is a TEDx Speaker, Social Entrepreneur, and Startup Ecosystem Enabler. An ex-Amazon professional, she serves as the Andhra Pradesh State Lead at Headstart Network and is a Leadership Board Member at Kectil International Youth Leadership Program. Featured in *75 Womenpreneurs of India* (2022) by Atal Innovation Mission, she has participated in global fellowships like Cherie Blair Foundation, Vital Voices GROW, and WEDU. Ashwathy’s venture, Avasarshala, has received international recognition from Bridge for Billions, Partos Netherlands, and Youth Co:Lab India. She is also a recipient of the Eastern Bhoomika Iconic Women Award 2020.",
             "image": "img/speaker_pics/ashwathy_venugopal.jpg"
+        },
+        {
+            "name": "Dr. Prashant Khankhoje",
+            "role": "Managing Director, A2Z Energies",
+            "description": "Dr. Prashant Khankhoje is the Managing Director of A2Z Energies, a company specializing in energy solutions. With extensive experience in the energy sector, Dr. Khankhoje has been instrumental in driving innovative strategies and fostering sustainable practices within the industry.",
+            "image": "img/speaker_pics/prashant_khankhoje.jpg"
+        },
+        {
+            "name": "Ms. Manushi K Shah",
+            "role": "Partner, La Mintage Legal",
+            "description": "Ms. Manushi K Shah is a Partner at La Mintage Legal, a distinguished law firm known for its expertise in dispute resolution. With a strong background in legal practice, Ms. Shah has been recognized for her commitment to championing trust and integrity in legal proceedings.",
+            "image": "img/speaker_pics/manushi_shah.jpg"
+        },
+        {
+            "name": "Mr. Venkat Somayaji",
+            "role": "Head of Solutions, Dexian India",
+            "description": "Mr. Venkat Somayaji serves as the Head of Solutions at Dexian India, where he leads initiatives in digital transformation and cognitive projects. With a focus on business and product management, Mr. Somayaji has successfully expanded Dexian's Managed Services globally, overseeing teams across the US, Middle East, and India.",
+            "image": "img/speaker_pics/venkat_somayaji.jpg"
+        },
+        {
+            "name": "Ms. Seema Bansal",
+            "role": "Founder & Executive Director, DCG Tech Limited",
+            "description": "Ms. Seema Bansal is the Founder & Executive Director of DCG Tech Limited, a pioneering packaging solutions company headquartered in Gurugram, India. Under her leadership, DCG Tech Limited has grown into one of India's leading packaging suppliers, serving over 50,000 clients and delivering innovative, sustainable, and data-driven packaging solutions. With a career spanning diverse high-level roles in international corporations, Seema brings a wealth of expertise in operations, customer experience, and business strategy. Her achievements have been recognized with multiple industry awards, including the 'Innovator for Packaging Solutions' and 'Women Entrepreneurship' awards. Seema continues to drive excellence in packaging innovation while empowering businesses with cutting-edge solutions.",
+            "image": "img/speaker_pics/seema_bansal.jpg"
+        },
+        {
+            "name": "Mr. Karthikeyan Dhayalan",
+            "role": "Director, GHL India Asset",
+            "description": "Mr. Karthikeyan Dhayalan, also known as Guhan, is the Director at GHL India Asset. In his role as Business Operation Head, he oversees the company's alternative investment platform, focusing on sectors such as biotechnology, real estate, agriculture, and food & beverage. Under his leadership, GHL India has achieved significant growth in asset management and client satisfaction.",
+            "image": "img/speaker_pics/karthikeyan_dhayalan.jpg"
         }  
 
     ],
