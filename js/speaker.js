@@ -8,7 +8,7 @@ const profiles = {
         },*/
         {
             "name": "Dr. Shriram Darbha",
-            "role": "Founder & Chief Curator, IKSA - Indian Knowledge Studies Academy, Bengaluru",
+            "role": "Founder & Chief Curator, IKSA - Indian Knowledge Studies Academy",
             "description": "Dr. Shriram Darbha is an HR leader, academician, and author with 33 years of experience across industries. Former Head-HR at BSE and Sr. VP-HR in Financial Services, he later served as a Professor and Dean at CMR University. He founded IKSA to bridge ancient wisdom with modern management. A recipient of national and international HR awards, he also received the ‘Ugaadi Saahitya Puraskaaram’ for his literary contributions. A Srividya practitioner and Bhagavad Gita speaker, he launched www.gotogita.in to offer psycho-spiritual counseling for holistic well-being.",
             "image": "img/speaker_pics/shriram_darbha.png"
         },      
