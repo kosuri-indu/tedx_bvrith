@@ -31,9 +31,9 @@ const profiles = {
             "image": "img/speaker_pics/manushi_shah.jpg"
         },
         {
-            "name": "Mr. Venkat Somayaji",
+            "name": "Mr. Venkat Lakshminarasimha",
             "role": "Head of Solutions, Dexian India",
-            "description": "Mr. Venkat Somayaji serves as the Head of Solutions at Dexian India, where he leads initiatives in digital transformation and cognitive projects. With a focus on business and product management, Mr. Somayaji has successfully expanded Dexian's Managed Services globally, overseeing teams across the US, Middle East, and India.",
+            "description": "Mr. Venkat Lakshminarasimha serves as the Head of Solutions at Dexian India, where he leads initiatives in digital transformation and cognitive projects. With a focus on business and product management, Mr. Lakshminarasimha has successfully expanded Dexian's Managed Services globally, overseeing teams across the US, Middle East, and India.",
             "image": "img/speaker_pics/venkat_somayaji.jpg"
         },
         {
