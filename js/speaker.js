@@ -25,12 +25,6 @@ const profiles = {
             "image": "img/speaker_pics/prashant_khankhoje.jpg"
         },
         {
-            "name": "Ms. Manushi K Shah",
-            "role": "Partner, La Mintage Legal",
-            "description": "Ms. Manushi K Shah is a Partner at La Mintage Legal, a distinguished law firm known for its expertise in dispute resolution. With a strong background in legal practice, Ms. Shah has been recognized for her commitment to championing trust and integrity in legal proceedings.",
-            "image": "img/speaker_pics/manushi_shah.jpg"
-        },
-        {
             "name": "Mr. Venkat Lakshminarasimha",
             "role": "Head of Solutions, Dexian India",
             "description": "Mr. Venkat Lakshminarasimha serves as the Head of Solutions at Dexian India, where he leads initiatives in digital transformation and cognitive projects. With a focus on business and product management, Mr. Lakshminarasimha has successfully expanded Dexian's Managed Services globally, overseeing teams across the US, Middle East, and India.",
