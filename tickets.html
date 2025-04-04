@@ -42,23 +42,18 @@
             z-index: 1;
         }
         .btn {
-            display: block;
-            width: 250px;
+            background: rgba(0, 0, 0, 0.6); /* Black with transparency */
+            color: white;
+            border: none;
             padding: 15px;
             font-size: 18px;
-            color: white;
-            background: linear-gradient(45deg, #ff0000, #b71c1c); /* Bright red to dark red */
-            border: 1px solid white; /* Thin white border */
+            width: 250px;
             border-radius: 8px;
-            cursor: pointer;
             text-decoration: none;
-            transition: background-color 0.3s ease, transform 0.2s, box-shadow 0.3s;
-            box-shadow: 0 0 12px rgba(255, 0, 0, 0.6); /* Soft red glow */
+            transition: background 0.3s ease, transform 0.2s;
         }
-
         .btn:hover {
-            background: linear-gradient(45deg, #b71c1c, #7f0000); /* Darker red hover */
-            box-shadow: 0 0 20px rgba(255, 0, 0, 0.9); /* Intense glow on hover */
+            background: rgba(0, 0, 0, 0.8); /* Darker black on hover */
             transform: scale(1.05);
         }
 
