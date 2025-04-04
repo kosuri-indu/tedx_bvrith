@@ -47,15 +47,18 @@
             padding: 15px;
             font-size: 18px;
             color: white;
-            background-color: red;
-            border: none;
+            background: linear-gradient(45deg, #ff0000, #b71c1c); /* Bright red to dark red */
+            border: 1px solid white; /* Thin white border */
             border-radius: 8px;
             cursor: pointer;
             text-decoration: none;
-            transition: background-color 0.3s ease, transform 0.2s;
+            transition: background-color 0.3s ease, transform 0.2s, box-shadow 0.3s;
+            box-shadow: 0 0 12px rgba(255, 0, 0, 0.6); /* Soft red glow */
         }
+
         .btn:hover {
-            background-color: #cc0000;
+            background: linear-gradient(45deg, #b71c1c, #7f0000); /* Darker red hover */
+            box-shadow: 0 0 20px rgba(255, 0, 0, 0.9); /* Intense glow on hover */
             transform: scale(1.05);
         }
 
@@ -79,7 +82,7 @@
     </video>
     <h1>Secure Your Spot Today!</h1>
     <div class="btn-container">
-        <a href="https://docs.google.com/forms/d/e/1FAIpQLSfSDiPhfzL1wctwfq0YPwKH-wP3ITQTiR-1G6q0BdFvr4vjuw/viewform?usp=dialog" class="btn">Registration for BVRITH students</a>
+        <a href="" class="btn">Registration for BVRITH students</a>
         <a href="https://docs.google.com/forms/d/e/1FAIpQLSe0nyhidRESn_2VEg2SkeKj6Maghd1Y7BBnrr153vCO6S1A9Q/viewform?usp=dialog" class="btn">Registration for Others</a>
     </div>
 </body>
