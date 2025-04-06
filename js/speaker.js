@@ -41,8 +41,19 @@ const profiles = {
             "role": "Director, GHL India Asset",
             "description": "Mr. Karthikeyan Dhayalan, also known as Guhan, is the Director at GHL India Asset. In his role as Business Operation Head, he oversees the company's alternative investment platform, focusing on sectors such as biotechnology, real estate, agriculture, and food & beverage. Under his leadership, GHL India has achieved significant growth in asset management and client satisfaction.",
             "image": "img/speaker_pics/karthikeyan_dhayalan.jpg"
-        }  
-
+        },
+        {
+            "name": "Sravani Basharajula",
+            "role": "DEET Telangana Government",
+            "description": "Driven by purpose, shaped by policy, and inspired by people, Sravani Basharajula is a dynamic public policy professional with a track record of enabling innovation, policy impact, and youth engagement through public sector collaboration. With a background spanning grassroots advocacy, government liaison, and technology ecosystems, she works closely with IAS officers, government departments, industry leaders, and academic institutions to create inclusive and scalable impact. Her focus includes supporting early-stage startups, aligning Global Capability Centers’ CSR strategies with regional development, and fostering industry-academia partnerships. Sravani has contributed to diverse missions—from water resource management and digital education to representing local perspectives at global platforms like the G20 Summit and GITEX Dubai.",
+            "image": "img/speaker_pics/sravani_basharajula.png"
+        },
+        {
+            "name": "Alekhya Harika",
+            "role": "Indian Film Actress",
+            "description": "Alekhya Harika is known for her impactful work in the Telugu and Tamil film industries. Raised in Hyderabad, she holds a BBA degree from St. Ann's College, Mehdipatnam. She made a striking debut with *Adithya Varma* in 2019, followed by noteworthy performances in *Sreekaram* (2021) and *Meet Cute* (2022). Widely recognized for her expressive acting and relatable screen presence, Alekhya rose to fame through *Dhethadi*, one of South India’s most popular YouTube channels. She has also starred in short films like *Frustrated Telangana Pilla* and *The Perfect Sales Girl*, earning admiration for her versatility. A contestant in *Bigg Boss Telugu 4* (2020), she expanded her presence to music videos such as *Vellake* and *Ammadi*. Alekhya is now set to make her debut as a lead actress alongside Santosh Shoban under the banner of Maas Movie Makers.",
+            "image": "img/speaker_pics/alekhya_harika.png"
+        }
     ],
     2024: [
         {
