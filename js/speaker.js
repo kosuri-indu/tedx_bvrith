@@ -53,6 +53,12 @@ const profiles = {
             "role": "Indian Film Actress",
             "description": "Alekhya Harika is known for her impactful work in the Telugu and Tamil film industries. Raised in Hyderabad, she holds a BBA degree from St. Ann's College, Mehdipatnam. She made a striking debut with Adithya Varma in 2019, followed by noteworthy performances in Sreekaram (2021) and Meet Cute (2022). Widely recognized for her expressive acting and relatable screen presence, Alekhya rose to fame through Dhethadi, one of South India’s most popular YouTube channels. She has also starred in short films like Frustrated Telangana Pilla and The Perfect Sales Girl, earning admiration for her versatility. A contestant in Bigg Boss Telugu 4 (2020), she expanded her presence to music videos such as Vellake and Ammadi. Alekhya is now set to make her debut as a lead actress alongside Santosh Shoban under the banner of Maas Movie Makers.",
             "image": "img/speaker_pics/alekhya_harika.png"
+        },
+        {
+            "name": "Kalidindi Venkata Phani Kumar Varma",
+            "role": "Director of Engineering, F5",
+            "description": "Phani Kumar Kalidindi is a visionary technology leader with over 16 years of experience transforming bold ideas into real-world impact through AI, machine learning, and scalable engineering systems. As Director of Engineering at F5 Inc., he has built and led high-performing teams across cloud, automation, integrations, and engineering. Named one of India’s Top AI Voices by Business Connect Magazine, Phani combines deep technical expertise with a human-first leadership style. With postgraduate degrees in Management and AI-ML Leadership, he’s a lifelong learner on a mission to harness technology to elevate lives and spark meaningful change.",
+            "image": "img/speaker_pics/phani_kumar.png"
         }
     ],
     2024: [
