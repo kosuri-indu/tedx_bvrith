@@ -59,6 +59,12 @@ const profiles = {
             "role": "Founder & Managing Director, GlampInn Valley",
             "description": "Rushvik Reddy Yasa is the visionary founder and managing director of GlampInn Valley and GeoTens India. An engineering graduate from CVSR College (2015) and a Master's degree holder in Business ERP from Victoria University, Melbourne, Rushvik spent five years in Australia working in roles ranging from debt collection and liquor distribution to supervising CSR teams for Metro Trains Melbourne. Fueled by his entrepreneurial spirit since 2015, he returned to India in 2021 to bring his passion for nature and camping to life. Inspired by his camping experiences in Australia, he pioneered the concept of glamorous camping (glamping) in the Telugu states. Today, GlampInn Valley is celebrated as one of the most relaxing getaways in South India, honored with two national awards and featured in Forbes Magazine (2023). In 2024, it was recognized as the 'Hidden Gem of the South'. Rushvik continues to blend nature, innovation, and experience to redefine outdoor living.",
             "image": "img/speaker_pics/rushvik_reddy.png"
+        },
+        {
+            "name": "Sundeep Kishan",
+            "role": "Indian Film Actor",
+            "description": "Sundeep Kishan is a prominent Indian film actor known for his diverse roles in Telugu and Tamil cinema. Starting his career as an assistant to Gautham Vasudev Menon, he made his acting debut with Prasthanam (2010) and gained fame with hits like Venkatadri Express (2013) and Maanagaram (2017). He also featured in the acclaimed web series The Family Man (2019). Beyond acting, Sundeep is an entrepreneur, running the successful restaurant chain Vivaha Bhojanambu in Hyderabad. His dynamic journey in both cinema and business makes him a youth icon admired for his versatility and innovation.",
+            "image": "img/speaker_pics/sundeep_kishan.png"
         }
     ],
     2024: [
